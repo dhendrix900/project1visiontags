@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Azure AI Image Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Upload Image for Analysis</h2>
+    <input type="file" id="imageInput">
+    <button onclick="uploadImage()">Analyze</button>
+    <div id="result"></div>
+
+    <script>
+        async function uploadImage() {
+            const input = document.getElementById('imageInput');
+            const file = input.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            const response = await fetch('/analyze', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            document.getElementById('result').innerHTML = `
+                <h3>Tags:</h3>
+                <ul>
+                    ${data.tags.map(tag => `<li>${tag.name} (${(tag.confidence*100).toFixed(2)}%)</li>`).join('')}
+                </ul>
+            `;
+        }
+    </script>
+</body>
+</html>
