@@ -3,13 +3,13 @@ Absolutely! Here's a clean and professional `README.md` for your **AI Vision Tag
 ---
 
 ```markdown
-# 🧠 AI Vision Tagging Web App
+## AI Vision Tagging Web App
 
 This is a Flask-based web application that uses Azure Cognitive Services (Computer Vision API) to analyze uploaded images and return descriptive tags with confidence scores. Built for hands-on experience with cloud-based AI and full-stack deployment using Azure App Services and GitHub Actions.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Upload any image via browser
 - Automatically tagged using Azure’s AI Computer Vision
@@ -18,7 +18,7 @@ This is a Flask-based web application that uses Azure Cognitive Services (Comput
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Backend:** Python (Flask)
 - **Frontend:** HTML, JavaScript, CSS
@@ -27,13 +27,13 @@ This is a Flask-based web application that uses Azure Cognitive Services (Comput
 
 ---
 
-## 📸 Demo
+## Demo
 
 > Coming soon — [Live Demo](https://your-app-url.azurewebsites.net)
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repo
 
@@ -69,7 +69,7 @@ Visit: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 This project is deployed to Azure App Service using GitHub Actions.  
 To deploy your own:
@@ -81,7 +81,7 @@ To deploy your own:
 
 ---
 
-## 📚 Learning Goals
+## Learning Goals
 
 This project was part of my journey to become an **AI Solutions Engineer** and covers:
 
@@ -92,9 +92,9 @@ This project was part of my journey to become an **AI Solutions Engineer** and c
 
 ---
 
-## 🧠 Credit
+## Credit
 
-Created 💡 by [Danielle Hendrix](https://github.com/dhendrix900)  
+Created by [Danielle Hendrix](https://github.com/dhendrix900)  
 Azure AI Engineer Certified | Cloud AI | Vision + NLP | Python Automation
 
 ---
